@@ -58,7 +58,7 @@ assessmentButton.onclick = function(){
     script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
     tweetDivided.appendChild(script);
 
-}
+};
 
 const answers = [
     '{userName}のいいところは声です。{userName}の特徴的な声は皆を惹きつけ、心に残ります。',
