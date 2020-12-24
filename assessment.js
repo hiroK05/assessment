@@ -21,7 +21,7 @@ function removeAllChildren(element){
     }
 }
 
-assessmentButton.onclick = function(){
+assessmentButton.onclick = () => {
     const userName = userNameInput.value;
     if(userName.length === 0){
         //名前が空の時は処理を終了する
@@ -45,19 +45,16 @@ assessmentButton.onclick = function(){
     const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=' +
                        encodeURIComponent('あなたのいいところ') +
                        '&ref_src=twsrc%5Etfw';
-
     anchor.setAttribute('href', hrefValue);
     anchor.className = 'twitter-hashtag-button';
     anchor.setAttribute('data-text', result);
     anchor.innerText = 'Tweet #あなたのいいところ';
-    
     tweetDivided.appendChild(anchor);
 
     //wedgets.jsの設定
     const script = document.createElement('script');
     script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
     tweetDivided.appendChild(script);
-
 };
 
 const answers = [
