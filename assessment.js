@@ -77,7 +77,6 @@ const answers = [
     '{userName}のいいところは気配りです。{userName}の配慮が多くの人を救っています。',
     '{userName}のいいところはその全てです。ありのままの{userName}自身がいいところなのです。',
     '{userName}のいいところは自制心です。やばいと思ったときにしっかりと衝動を抑えられる{userName}が皆から評価されています。'
-    '{userName}のいいところは優しさです。{userName}の優しい雰囲気や立ち振る舞いに多くの人が癒やされています。'
 ];
 
 /**
@@ -101,7 +100,6 @@ function assessment(userName){
 }
 
 //テストコード
-/*
 console.assert(
     assessment('太郎') ===
         '太郎のいいところは決断力です。太郎がする決断にいつも助けられる人がいます。',
@@ -111,4 +109,3 @@ console.assert(
     assessment('太郎') === assessment('太郎'),
     '入力が同じ名前なら同じ診断結果を出力する処理が正しくありません。'
 )
-*/
